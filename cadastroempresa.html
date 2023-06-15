@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftMed - Medicina Ocupacional</title>
+</head>
+<body>
+    <h1>cadastro empresa</h1>
+    <div>
+        <label>Empresa</label>
+        <input type="text" name="nome-empresa" id="nome-empresa" onchange="onChangeEmail()" placeholder=""/>
+        <label>CNPJ</label>
+        <input type="number" name="num-cnpj" id="num-cnpj" onchange="onChangeEmail()" placeholder=""/>
+        <button type="button" class = "solid" id= "entrar"  onclick= "logado()">Visualizar</button>
+        <button type="button" class = "solid" id= "entrar"  onclick= "logado()">Editar</button>
+        <button type="button" class = "solid" id= "entrar"  onclick= "logado()">Excluir</button>
+    </div>
+    <table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome da Empresa</th>
+                    <th>CNPJ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>empresa</td>
+                    <td>CNPJ</td>
+                </tr>
+            </tbody>
+        </table>
+    </table>
+</body>
+<link rel="stylesheet" href="style-empresa.css">
+
+<script src="login.js"></script>
+<script src="validacoes.js"></script>
+<script src="loading.js"></script>
+
+</html>

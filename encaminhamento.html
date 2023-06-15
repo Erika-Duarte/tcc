@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftMed - Medicina Ocupacional</title>
+</head>
+<body>
+    <h1>Novo Encaminhamento</h1><br/>
+    <h2>Informações da Empresa</h2><br/>
+    <form>
+        <div>
+            <label>Razão Social</label><br/>
+            <input type="text" name="nome-empresa" id="nome-empresa" placeholder="nome da empresa"/>
+        </div> 
+        <div>
+            <label>Nome Fantasia</label><br/>
+            <input type="text" name="nome-empresa" id="nome-empresa" placeholder="Opcional"/>
+        </div> 
+        <div>
+            <label>CNPJ</label><br/>
+            <input type="number" name="cnpj" id="cnpj" placeholder="cnpj"/>
+        </div>
+        <div>
+            <label>E-mail</label><br/>
+            <input type="email" name="email-empresa" id="email-empresa" placeholder="seu@email.com.br"/>
+        </div>
+        <div>
+            <label>Contato</label><br/>
+            <input type="number" name="telefone-empresa" id="telefone-empresa" placeholder="Insira seu número de telefone"/>
+        </div>
+
+        <h2>Informações do Colaborador</h2><br/>
+        <div>
+            <label>Nome Completo</label><br/>
+            <input type="text" name="nome-colab" id="nome-colab" placeholder="nome do colaborador"/>
+        </div> 
+        <div>
+            <label>CPF</label><br/>
+            <input type="number" name="cpf" id="cpf" placeholder="CPF"/>
+        </div>
+        <div>
+            <label>Data de Nascimento</label><br/>
+            <input type="date" name="datenasc" id="datenasc" placeholder=" / / "/>
+        </div>
+        <div>
+            <label>Contato</label><br/>
+            <input type="number" name="telefone-colab" id="telefone-colab" placeholder="Insira seu número de telefone"/>
+        </div>
+        <button type="button" class = "solid" id= "exames" onclick= "irExames()">Ir para exames</button>
+
+    </form>
+</body>
+
+<link rel="stylesheet" href="style-encaminhamento.css">
+
+<script src="login.js"></script>
+<script src="validacoes.js"></script>
+<script src="loading.js"></script>
+</html>
