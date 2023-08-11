@@ -1,4 +1,3 @@
-
 function onChangeEmail(){
     toggleButtonsDisabled();
     toggleEmailErrors();
@@ -14,7 +13,6 @@ function logado(){
     firebase.auth().signInWithEmailAndPassword(
         form.email().value, form.password().value).then(() => {        
             hideloading();
-            
             window.location.href = "home.html";
             }).catch(error =>{
                 hideloading();
@@ -99,7 +97,7 @@ function togglePasswordErrors(){
 
 function toggleButtonsDisabled(){
 
-        const emailValid = isEmailValid;
+        const emailValid = isEmailValid();
         const passwordValid = isPasswordValid();
         form.loginButton().disabled = !emailValid || !passwordValid;
 
