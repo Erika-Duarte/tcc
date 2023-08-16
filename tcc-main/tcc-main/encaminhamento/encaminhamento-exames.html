@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftMed - Medicina Ocupacional</title>
+</head>
+<body>
+    <h1>Exames Complementares</h1><br/>
+    <form>
+        <div>
+            <label>Função: </label>
+            <input type="text" name="funcao" id="funcao" placeholder="Função"/>
+            <label>Setor: </label>
+            <input type="text" name="setor" id="setor" placeholder="Setor"/>
+        </div> 
+
+        <div>
+            <label><h2>Selecione o Tipo de Exame:</h2></label>
+
+            <select name="select-tipo-exame">
+                <option value="deafult-per" id="deafult-tipo">Selecione o Tipo de Exame</option>
+                <option value="admissional">Admissional </option>
+                <option value="demissional">Demissional </option>
+                <option value="mudancafuncao">Mudança de Função </option>
+                <option value="periodico">Periódico</option>
+                <option value="retornoaotrab">Retorno Ao Trabalho</option>
+              </select>
+        </div>
+        <div>
+            <form>
+                <label><h2>Selecione os Exames Complementares</h2></label>
+                <select name="select-exames"multiple size="16">
+                    <optgroup label="Exames Clínicos">
+                        <option value="clinico">Exame Clínico</option>
+                       <option value="acvisual">Acuidade Visual</option>
+                       <option value="avpsicossocial">Avaliação Psicossocial</option>
+                       <option value="berg">Teste Romberg</option>
+                       </optgroup>
+                      
+                        <optgroup label="Exames Laboratoriais">
+                        <option value="hemog">Hemograma</option>
+                        <option value="glicemia">Glicemia</option>
+                        <option value="vdrl">VDRL</option>
+                       </optgroup>
+                                             
+                       <optgroup label="Demais Exames">
+                        <option value="ecg">Eletrocardiograma (ECG)</option>
+                        <option value="eeg">Eletroencefalograma (EEG)</option>
+                        <option value="audio">Audiometria </option>
+                        <option value="espiro">Espirometria</option>
+                       </optgroup>
+                </select>
+            </form>
+        </div>
+        <div>
+            <label><h2>Selecione o Período para realização do exame:</h2></label>
+            <label>Atenção! Exames Laboratoriais são realizados somente no período matutino.</label><br/>
+            <br/><br/>
+            <select name="select-periodo">
+                <option value="deafult-per" id="deafult-per">Selecione o Período Desejado</option>
+                <option value="matutino">Matutino</option>
+                <option value="vespertino"> Vespertino </option>
+                <option value="indefinido"> Indefinido</option> 
+              </select>
+        </div><br/>
+        <div>
+            <label><h2>Selecione a forma de Pagamento:</h2></label>
+            <select name="select-pagamento">
+                <option value="deafult-pag"id="deafult-pag">Selecione a forma de Pagamento</option>
+                <option value="matutino">Empresa</option>
+                <option value="vespertino"> Colaborador </option>
+              </select>
+        </div><br/>
+
+        <label><h2>Selecione as Aptidões Necessárias</h2></label>
+        <select name="select-exames"multiple size="5">
+                <option value="altura">Apto para Trabalho em Altura</option>
+               <option value="confinado">Apto para Trabalho em Espaço Confinado</option>
+               <option value="eletricidade">Apto para Trabalho com Eletricidade</option>
+               <option value="maquinas">Apto para NR-11 (Operação de máquinas)</option>
+               <option value="alimentos">Apto para Manuseio de Alimentos</option>
+            </select>        
+     
+    <button onclick="window.print()">Imprimir | Salvar PDF</button>
+
+    </form>
+</body>
+
+<link rel="stylesheet" href="style-encaminhamento.css">
+
+<script src="../login.js"></script>
+<script src="../validacoes.js"></script>
+<script src="../loading.js"></script>
+</html>

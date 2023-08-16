@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro paciente</title>
+</head>
+<body>
+    <h1>cadastro paciente</h1>
+    <div>
+        <label>Nome</label>
+        <input type="text" name="nome-empresa" id="nome-empresa" onchange="onChangeEmail()" placeholder=""/>
+        <label>CPF</label>
+        <input type="number" name="num-cnpj" id="num-cnpj" onchange="onChangeEmail()" placeholder=""/>
+        <button type="button" class = "solid" id= "entrar"  onclick= "logado()">Visualizar</button>
+        <button type="button" class = "solid" id= "entrar"  onclick= "logado()">Editar</button>
+        <button type="button" class = "solid" id= "entrar"  onclick= "logado()">Excluir</button>
+    </div>
+    <table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do Colaborador</th>
+                    <th>CPF</th>
+                    <th>Data de Nascimento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nome</td>
+                    <td>000.000.000-00</td>
+                    <td>__/__/__</td>
+                </tr><br/><br/>
+            </tbody>
+        </table>
+    </table>
+</body>
+<link rel="stylesheet" href="style-empresa.css">
+
+<script src="login.js"></script>
+<script src="validacoes.js"></script>
+<script src="loading.js"></script>
+
+</html>
